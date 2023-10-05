@@ -1,17 +1,62 @@
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: #eee8e8;
+    color: #000;
 }
 
 a {
-    color: white
+    color: black
 }
 
+.shoes.content {
+    
+}
+
+.shoe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+  }
+
 .content ul {
-    display: flex;
+    
     list-style-type: none;
 }
 
 .content li {
+    border: #000 solid 2px;
+    border-radius: 0.7rem;
+    height: 8rem;
+    padding: 0 1rem;
     
+}
+
+
+.create-shoe form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-shoe label {
+    margin-bottom: 7px;
+    padding: 0.7rem;
+}
+
+.create-shoe input,
+.create-shoe textarea,
+.create-shoe button {
+  width: 60%;
+  height: 2.5rem;
+  margin-bottom: 10px;
+  border-radius: 0.7rem;
+  outline: none;
+  padding-left: 5px;
+}
+
+.create-shoe textarea {
+    height: 200px;
 }
