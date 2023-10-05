@@ -6,3 +6,12 @@ body {
 a {
     color: white
 }
+
+.content ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.content li {
+    
+}
