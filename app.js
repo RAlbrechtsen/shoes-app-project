@@ -9,7 +9,7 @@ const app = express();
 // connect mongo db
 const dbURI = 'mongodb+srv://ralbrechtsen93:xcXiwjQNmVi1dTAc@cluster0.z937adl.mongodb.net/shoeapp?retryWrites=true&w=majority'
 mongoose.connect(dbURI, {useNewUrlParser: true, useUnifiedTopology: true })
-    .then((result) => app.listen(3000), console.log('Connected to db'))
+    .then((result) => app.listen(5000), console.log('Connected to db'))
     .catch((err) => console.log(err))
 
 // view engine
