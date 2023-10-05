@@ -1,49 +1,77 @@
 body {
-    background-color: #eee8e8;
-    color: #000;
+  background-color: #eee8e8;
+  color: #000;
 }
 
 a {
-    color: black
+  color: black;
 }
 
 .shoes.content {
-    
 }
 
 .shoe-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    margin: 0 50px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
 
 .content ul {
-    
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .content li {
-    border: #000 solid 2px;
-    border-radius: 0.7rem;
-    height: 8rem;
-    padding: 0 1rem;
-    
+  border: #000 solid 2px;
+  border-radius: 0.7rem;
+  height: 8rem;
+  padding: 1rem 1rem;
 }
 
+.create-shoe input,
+textarea,
+button {
+  margin: 0;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.create-shoe input,
+textarea {
+  background: white;
+}
+
+.create-shoe button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(33, 226, 33);
+}
+
+.create-shoe button:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(48, 233, 48);
+}
 
 .create-shoe form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .create-shoe label {
-    margin-bottom: 7px;
-    padding: 0.7rem;
+  margin-bottom: 7px;
+  padding: 0.7rem;
 }
 
 .create-shoe input,
@@ -57,5 +85,5 @@ a {
 }
 
 .create-shoe textarea {
-    height: 200px;
+  height: 200px;
 }
