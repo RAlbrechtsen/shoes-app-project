@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe app | <%= title %></title>
+</head>
+<body>
+    <h1>This is all the shoes</h1>
+
+    <nav>
+        <a href="/">Homepage</a>
+        <a href="/all-shoes">Shoes page</a>
+        <a href="/add-shoe">Shoes page</a>
+    </nav>
+
+
+    <div class="create-shoe content">
+        <form>
+          <label for="title">Brand:</label>
+          <input type="text" id="brand" name="brand" required>
+          <label for="snippet">Model:</label>
+          <input type="text" id="model" name="model" required>
+          <label for="body">Description:</label>
+          <textarea id="body" name="body" required></textarea>
+          <button>Submit</button>
+        </form>
+      </div>
+</body>
+</html>

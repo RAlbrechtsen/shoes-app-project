@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shoe app | <%= title %></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>This is all the shoes</h1>
+
+    <nav>
+      <div class="site-title">
+        <a href="/">Homepage</a>
+        <a href="/all-shoes">Shoes page</a>
+        <a href="/add-shoe">Shoes page</a>
+      </div>
+    </nav>
+
+    <div class="shoes content">
+      <h2>All shoes</h2>
+
+
+      <% if (shoes.length > 0) { %>
+        <% shoes.forEach(shoe => { %>
+  
+          <h3 class="brand"><%= shoe.brand %></h3>
+          <p class="model"><%= shoe.model %></p>
+  
+        <% }) %>
+      <% } else { %>
+        <p>There are no blogs to display...</p>
+      <% } %>
+    </div>
+  </body>
+</html>
